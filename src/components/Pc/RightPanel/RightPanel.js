@@ -17,7 +17,9 @@ const RightPanel = ({ userSelected, handleDataAppend }) => {
     <div className="RightPanelContainer">
       <div className="RightPanelContainer-Heading">
         <div className="RightPanelContainer-Heading-Container">
-          <div className="RightPanelContainer-Heading-Icon">{`${names[0][0]} ${names[1][0]}`}</div>
+          <div
+            className={`RightPanelContainer-Heading-Icon ${userSelected.color}`}
+          >{`${names[0][0]} ${names[1][0]}`}</div>
           <div className="RightPanelContainer-Heading-Name">
             {userSelected.name}
           </div>

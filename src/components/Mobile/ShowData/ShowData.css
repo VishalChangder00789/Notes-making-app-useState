@@ -31,9 +31,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: blue;
   color: white;
   margin-left: 2%;
+  /* background: blue; */
 }
 .ShowDataContainer-Heading-Name {
   display: flex;

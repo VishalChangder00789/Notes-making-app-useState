@@ -3,6 +3,7 @@ import "./ShowData.css";
 import Messages from "../../../micro components/Messages/Messages";
 import sendButton from "../../../assets/send.png";
 import backButton from "../../../assets/BackArrow.png";
+import "../color.css";
 
 const ShowData = ({
   userSelected,
@@ -11,7 +12,6 @@ const ShowData = ({
   handleDataAppend,
 }) => {
   const [textareaInput, setTextAreaInput] = useState("");
-
   const names = userSelected.name.split(" ");
   return (
     <div className="ShowDataContainer">
@@ -22,7 +22,9 @@ const ShowData = ({
         >
           <img src={backButton} />
         </div>
-        <div className="ShowDataContainer-Heading-Icon">{`${names[0][0]} ${names[1][0]} `}</div>
+        <div
+          className={`ShowDataContainer-Heading-Icon ${userSelected.color}`}
+        >{`${names[0][0]} ${names[1][0]} `}</div>
         <div className="ShowDataContainer-Heading-Name">
           {userSelected.name}
         </div>
