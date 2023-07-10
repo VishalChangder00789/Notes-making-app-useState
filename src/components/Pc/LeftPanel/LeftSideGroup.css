@@ -1,0 +1,61 @@
+.LeftSideGroupContainer {
+  display: flex;
+  background: white;
+  /* border: 2px solid red; */
+  width: 20%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LeftContainer {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 95%;
+  height: 15%;
+  margin-top: 3%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.LeftContainer-Heading {
+  display: flex;
+  /* border: 2px solid darkkhaki; */
+  height: 30%;
+  width: 100%;
+  font-weight: 500;
+  font-size: 22px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.LeftContainer-Button {
+  display: flex;
+  /* border: 2px solid green; */
+  height: 35%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.LeftContainer-Button-button {
+  display: flex;
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  background: black;
+  color: white;
+  font-size: larger;
+}
+
+.LeftSideGroupContainer-Container {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 95%;
+  height: 85%;
+  overflow: auto;
+  flex-direction: column;
+}

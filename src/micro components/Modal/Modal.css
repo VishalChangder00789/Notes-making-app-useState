@@ -1,0 +1,122 @@
+.Modal-BlankArea {
+  background: rgba(128, 128, 128, 0.626);
+  position: fixed;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.ModalContainer {
+  display: flex;
+  position: fixed;
+  /* border: 2px solid red; */
+  height: 25%;
+  width: 80%;
+  top: 30%;
+  left: 9%;
+  background: white;
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContentContainer {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  flex-direction: column;
+
+  /* border: 2px solid grey; */
+}
+/*  */
+.ModalContainer-Heading {
+  margin-top: 2%;
+  /* border: 2px solid black; */
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+}
+/*  */
+.ModalContainer-GroupNameContainer {
+  display: flex;
+  /* border: 2px solid greenyellow; */
+  margin-top: 3%;
+  width: 100%;
+  height: 15%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ModalContainer-GroupNameContainer-Name {
+  font-weight: 500;
+}
+.ModalContainer-GroupNameContainer-Input {
+  display: flex;
+  height: 90%;
+  width: 60%;
+  /* border: 2px solid blueviolet; */
+}
+.ModalContainer-GroupNameContainer-Input-Input {
+  display: flex;
+  height: 85%;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.221);
+}
+/*  */
+
+.ModalContainer-ColorChoice {
+  display: flex;
+  /* border: 2px solid red; */
+  /* border: 2px solid greenyellow; */
+  margin-top: 5%;
+  width: 100%;
+  height: 20%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ModalContainer-ColorChoice-Name {
+  font-weight: 500;
+}
+.ModalContainer-ColorChoice-Color {
+  display: flex;
+  height: 90%;
+  width: 60%;
+  /* border: 2px solid palegreen; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.color {
+  /* border: 2px solid hotpink; */
+  border-radius: 50%;
+  height: 70%;
+  width: 15%;
+}
+/*  */
+
+.CreateButtonContainer {
+  display: flex;
+  /* border: 2px solid rgb(158, 158, 147); */
+  margin-top: 6%;
+  height: 17%;
+  justify-content: center;
+  align-items: center;
+}
+.CreateButtonContainer-Button {
+  display: flex;
+  background: black;
+  color: white;
+  height: 100%;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 6px;
+}

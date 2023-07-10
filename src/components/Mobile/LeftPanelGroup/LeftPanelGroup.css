@@ -1,0 +1,54 @@
+.LeftPanelContainer {
+  display: flex;
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.LeftPanelContainer-Heading {
+  display: flex;
+  /* border: 2px solid green; */
+  height: 8%;
+  width: 90%;
+  align-self: flex-start;
+  margin-left: 5%;
+  font-weight: 500;
+  font-size: 35px;
+  margin-top: 5%;
+  align-items: center;
+}
+.LeftPanelContainer-ButtonContainer {
+  display: flex;
+  /* border: 2px solid green; */
+  height: 6%;
+  width: 90%;
+  align-self: flex-start;
+  margin-left: 5%;
+  font-weight: 500;
+  font-size: 35px;
+  margin-top: 5%;
+  align-items: center;
+}
+.LeftPanelContainer-ButtonContainer-Button {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 37px;
+  background: black;
+  color: white;
+}
+.LeftPanelContainer-NotesGroupContainer {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 100%;
+  margin-top: 5%;
+  align-items: center;
+  overflow-y: auto;
+}

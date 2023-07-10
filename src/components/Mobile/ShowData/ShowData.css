@@ -1,0 +1,95 @@
+/* 75+7 */
+
+.ShowDataContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.ShowDataContainer-Heading {
+  display: flex;
+  /* border: 2px solid green; */
+  height: 10%;
+  background: #e8e8e8;
+  align-items: center;
+}
+.BACKARROW {
+  display: flex;
+  color: rgb(255, 0, 0);
+  /* border: 2px solid blue; */
+  height: 100%;
+  width: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ShowDataContainer-Heading-Icon {
+  border-radius: 50%;
+  /* border: 2px solid red; */
+  height: 75%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  color: white;
+  margin-left: 2%;
+}
+.ShowDataContainer-Heading-Name {
+  display: flex;
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 50%;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  /* margin-right: 15%; */
+  margin-left: 2%;
+}
+
+/*  */
+.ShowDataContainer-Data {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blueviolet; */
+  height: 75%;
+  background: #f7ecdc;
+  overflow: auto;
+  align-items: center;
+}
+/*  */
+
+.FooterContainer {
+  display: flex;
+  height: 18%;
+  /* border: 2px solid red; */
+  background: #e8e8e8;
+  justify-content: center;
+  align-items: center;
+}
+
+.FooterContainer-TextBox {
+  display: flex;
+  /* border: 2px solid red; */
+  width: 90%;
+  height: 90%;
+}
+
+.FooterContainer-TextBox-textArea {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 80%;
+  resize: none;
+  border-radius: 25px;
+  padding: 3%;
+}
+
+.FooterContainer-TextBox-SendButton {
+  display: flex;
+  position: fixed;
+  width: 6%;
+  height: 4%;
+  right: 8%;
+  top: 94%;
+}
