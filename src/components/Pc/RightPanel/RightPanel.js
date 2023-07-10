@@ -9,6 +9,13 @@ const RightPanel = ({ userSelected, handleDataAppend }) => {
   let names;
   if (userSelected.name) {
     names = userSelected.name.split(" ");
+
+    if (names.length < 2) {
+      names = names[0][0];
+    } else if (names.length > 1) {
+      let newName = `${names[0][0]} ${names[names.length - 1][0]}`;
+      names = newName;
+    }
   }
 
   const [textareaInput, setTextAreaInput] = useState("");
@@ -19,7 +26,7 @@ const RightPanel = ({ userSelected, handleDataAppend }) => {
         <div className="RightPanelContainer-Heading-Container">
           <div
             className={`RightPanelContainer-Heading-Icon ${userSelected.color}`}
-          >{`${names[0][0]} ${names[1][0]}`}</div>
+          >{`${names}`}</div>
           <div className="RightPanelContainer-Heading-Name">
             {userSelected.name}
           </div>
@@ -44,6 +51,7 @@ const RightPanel = ({ userSelected, handleDataAppend }) => {
           />
           {/* ADD A SEND BUTTON */}
           <img
+            alt="sendButton"
             onClick={() => handleDataAppend(textareaInput, userSelected.id)}
             className="PC-FooterContainer-TextBox-SendButton"
             src={sendButton}

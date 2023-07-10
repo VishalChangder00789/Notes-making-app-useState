@@ -12,7 +12,20 @@ const ShowData = ({
   handleDataAppend,
 }) => {
   const [textareaInput, setTextAreaInput] = useState("");
-  const names = userSelected.name.split(" ");
+
+  let names;
+  let length;
+  if (userSelected.name) {
+    names = userSelected.name.split(" ");
+    length = names.length;
+
+    if (names.length >= 2) {
+      let newName = `${names[0][0]} ${names[length - 1][0]}`;
+      names = newName;
+    } else if (names.length <= 1) {
+      names = names[0][0];
+    }
+  }
   return (
     <div className="ShowDataContainer">
       <div className="ShowDataContainer-Heading">
@@ -24,7 +37,7 @@ const ShowData = ({
         </div>
         <div
           className={`ShowDataContainer-Heading-Icon ${userSelected.color}`}
-        >{`${names[0][0]} ${names[1][0]} `}</div>
+        >{`${names} `}</div>
         <div className="ShowDataContainer-Heading-Name">
           {userSelected.name}
         </div>
