@@ -4,7 +4,7 @@ import LeftPanelGroup from "./LeftPanelGroup/LeftPanelGroup";
 import ShowData from "../Mobile/ShowData/ShowData";
 import "./color.css";
 import Modal from "../../micro components/Modal/Modal";
-import { storeInLocalStorage } from "./../../controllers/storeInLocalStorage";
+import { storeInLocalStorage } from "../../controllers/storeInLocalStorage";
 
 const timeFrame = new Date();
 const Mobile = ({ notes, setNotes }) => {
