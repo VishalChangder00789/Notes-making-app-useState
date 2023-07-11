@@ -73,7 +73,7 @@ function App() {
         ) : (
           <Mobile notes={getFromLocalStorage()} setNotes={setNotes} />
         )
-      ) : !getFromLocalStorage ? (
+      ) : !getFromLocalStorage() ? (
         <Pc notes={Notes} setNotes={setNotes} />
       ) : (
         <Pc notes={getFromLocalStorage()} setNotes={setNotes} />
