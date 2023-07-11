@@ -4,6 +4,7 @@ import LeftPanelGroup from "./LeftPanelGroup/LeftPanelGroup";
 import ShowData from "../Mobile/ShowData/ShowData";
 import "./color.css";
 import Modal from "../../micro components/Modal/Modal";
+import { storeInLocalStorage } from "./../../controllers/storeInLocalStorage";
 
 const timeFrame = new Date();
 const Mobile = ({ notes, setNotes }) => {
@@ -54,6 +55,9 @@ const Mobile = ({ notes, setNotes }) => {
     let newNotes = notes.map((obj) => (obj.id === id ? updatedObject : obj));
     setNotes(newNotes);
     setUserSelected(updatedObject);
+
+    /// Added to local storage
+    storeInLocalStorage(newNotes);
   };
 
   return (

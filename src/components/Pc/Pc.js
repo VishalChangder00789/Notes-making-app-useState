@@ -4,6 +4,7 @@ import LeftSideGroup from "./LeftPanel/LeftSideGroup";
 import RightPanel from "./RightPanel/RightPanel";
 import { useState } from "react";
 import PcModal from "../../micro components/PC Modal/PcModal";
+import { storeInLocalStorage } from "./../../controllers/storeInLocalStorage";
 
 const timeFrame = new Date();
 const Pc = ({ notes, setNotes }) => {
@@ -53,6 +54,9 @@ const Pc = ({ notes, setNotes }) => {
     let newNotes = notes.map((obj) => (obj.id === id ? updatedObject : obj));
     setNotes(newNotes);
     setUserSelected(updatedObject);
+
+    /// Added to local storage
+    storeInLocalStorage(newNotes);
   };
 
   return (

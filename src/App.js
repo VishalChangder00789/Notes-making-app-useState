@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Mobile from "./components/Mobile/Mobile";
 import Pc from "./components/Pc/Pc";
+import { getFromLocalStorage } from "./controllers/getFromLocalStorage";
 
 function App() {
   const [Notes, setNotes] = useState([
@@ -67,9 +68,15 @@ function App() {
   return (
     <div className="App">
       {width <= 450 ? (
-        <Mobile notes={Notes} setNotes={setNotes} />
-      ) : (
+        !getFromLocalStorage() ? (
+          <Mobile notes={Notes} setNotes={setNotes} />
+        ) : (
+          <Mobile notes={getFromLocalStorage()} setNotes={setNotes} />
+        )
+      ) : !getFromLocalStorage ? (
         <Pc notes={Notes} setNotes={setNotes} />
+      ) : (
+        <Pc notes={getFromLocalStorage()} setNotes={setNotes} />
       )}
     </div>
   );

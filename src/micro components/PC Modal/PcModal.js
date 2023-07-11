@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./PcModal.css";
 import ReactDOM from "react-dom";
 import { nanoid } from "nanoid";
+import { storeInLocalStorage } from "../../controllers/storeInLocalStorage";
 
 const PcModal = ({ setNotes, notes, setShowModal, showModal }) => {
   const [modalInput, setModalInput] = useState("");
@@ -22,6 +23,7 @@ const PcModal = ({ setNotes, notes, setShowModal, showModal }) => {
     let newNote = [...notes, newNoteGroup];
     setNotes(newNote);
     setShowModal(false);
+    storeInLocalStorage(newNote);
   };
 
   return ReactDOM.createPortal(

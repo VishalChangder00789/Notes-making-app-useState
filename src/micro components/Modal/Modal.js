@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Modal.css";
 import ReactDOM from "react-dom";
 import { nanoid } from "nanoid";
+import { storeInLocalStorage } from "../../controllers/storeInLocalStorage";
 
 const Modal = ({ setNotes, notes, setShowModal, showModal }) => {
   const [modalInput, setModalInput] = useState("");
@@ -21,6 +22,8 @@ const Modal = ({ setNotes, notes, setShowModal, showModal }) => {
 
     let newNote = [...notes, newNoteGroup];
     setNotes(newNote);
+    ///  setting the newNotes
+    storeInLocalStorage(newNote);
     setShowModal(false);
   };
 
